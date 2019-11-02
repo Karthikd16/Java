@@ -1,0 +1,23 @@
+// This program will print the i the value in a sorted array.
+import java.util.*;
+
+public class sample
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+	int arr[];
+	Scanner sc = new Scanner(System.in);
+	System.out.printf("Size :");
+	int size = sc.nextInt();
+	arr = new int[size];
+	System.out.printf("Elements of the array :");
+	for(int i = 0; i < size; i++)
+	{
+		arr[i] = sc.nextInt();
+	}
+	Arrays.sort(arr);
+	System.out.printf("Enter the i(from 0 to size-1) the element :");
+	int i = sc.nextInt();
+	System.out.print(arr[i]);
+	}
+}
